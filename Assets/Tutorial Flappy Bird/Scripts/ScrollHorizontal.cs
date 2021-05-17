@@ -6,7 +6,7 @@ public class ScrollHorizontal : MonoBehaviour
 {
 
     public float speedX = -1;
-    //public float minX = -12;
+    public float minX = -12;
     // Start is called before the first frame update
 
 
@@ -14,15 +14,15 @@ public class ScrollHorizontal : MonoBehaviour
     void Update()
     {
 
-        //if (minX > transform.position.x)
-        //{
-        //    //¿À¸¥ÂÊÀ¸·Î °¡·ÎÅ©±â(20.48) *2 ¸¸Å­ ÀÌµ¿ÇÏ°Ô!
-        //    transform.Translate(20.48f * 2, 0, 0);
+        if (minX > transform.position.x)
+        {
+           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å©ï¿½ï¿½(20.48) *2 ï¿½ï¿½Å­ ï¿½Ìµï¿½ï¿½Ï°ï¿½!
+           transform.Translate(20.48f * 2, 0, 0);
 
-        //}
-        //Relocateº¸´Ù ¾Æ·¡ ²¨°¡ ¸ÕÀú ½ÇÇàµÅ¼­ °£°ÝÀÌ ¶¹´Ù. 
+        }
+        //Relocateï¿½ï¿½ï¿½ï¿½ ï¿½Æ·ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Å¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½. 
         transform.Translate(speedX * Time.deltaTime, 0, 0);
-        //¹æ¹ý2
+        //ï¿½ï¿½ï¿½2
         //var pos = transform.position;
         //pos.x += speedX * Time.deltaTime;
         //transform.position = pos;
